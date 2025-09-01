@@ -12,6 +12,7 @@ from langchain_community.embeddings import HuggingFaceInstructEmbeddings  # New 
 from langchain_community.document_loaders import PyPDFLoader  # New import path
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma  # New import path
+from ibm_boto3 import session
 from langchain_ibm import WatsonxLLM
 
 # Check for GPU availability and set the appropriate device for computation.
